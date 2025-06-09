@@ -21,7 +21,7 @@
         <h1>Quadratic Voting vs. One-Person-One-Vote Analysis</h1>
         <p class="subtitle">Beyond Conference 2025 投票分析</p>
     </header>
-    
+
     <nav>
         <ul>
             <li><a href="#background">実施背景</a></li>
@@ -37,18 +37,39 @@
             <li><a href="#conclusion">結論</a></li>
         </ul>
     </nav>
-    
+
     <main>
         <section id="background">
             <h2>Beyond Conference 2025でのQV実施背景</h2>
-            <p>Beyond Conference 2025は、2025年4月25-26日に淡路島で開催された、社会課題・地域課題解決型プロジェクトを支援するカンファレンスです。このカンファレンスの一環として、aBC DAO（and Beyond カンパニー）とDigDAOの共催により、「投票参加型資金分配プログラム」が実施されました。</p>
-            
+            <p><a href="https://www.beyondconference2025.com/" target="_blank">Beyond Conference 2025</a>は、2025年4月25-26日に淡路島で開催された、社会課題・地域課題解決型プロジェクトを支援するカンファレンスです。</p>
+
+            <p>このカンファレンスの一環として、aBC DAO（and Beyond カンパニー）とDigDAOの共催により、「投票参加型資金分配プログラム（以下、QV）」が実施されました。</p>
+
+            <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/ef1510f9f5204b75bf0adf76432b18d6"
+                title="BeyondカンファレンスでQuadratic Votingで資金分配を実施した時のスライド" allowfullscreen="true"
+                style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 315;"
+                data-ratio="1.7777777777777777"></iframe>
+
             <h3>クアドラティック・ボーティング（QV）とは</h3>
             <p>クアドラティック・ボーティング（Quadratic Voting, QV）は、少数の声が埋もれてしまいやすい多数決や、単純な投票方法では捉えきれない「熱量」や「重み」を表現するために生まれた投票方式です。参加者には一定数の票が与えられ、複数のプロジェクトに自由に配分して投票します。投票数に応じてコストが上がる仕組みにより、どのプロジェクトをどれだけ強く支持しているかを反映できるのが特徴です。</p>
-            
+
+            <p>QVの特徴的な点は以下の通りです：</p>
+            <ul>
+                <li>投票者は複数の選択肢に異なる強度で投票できる</li>
+                <li>投票コストは投票数の2乗に比例（例：1票=1クレジット、2票=4クレジット、3票=9クレジット）</li>
+                <li>強い選好を持つ少数派の意見も反映される</li>
+                <li>投票者の選好強度を効率的に表現できる</li>
+            </ul>
+
+            <p>この仕組みは、従来の一人一票方式では捉えきれなかった「熱意」や「重要度」を数値化し、より公平で効率的な意思決定を実現します。特に、公共財の配分や予算配分など、社会的な意思決定の場面で効果を発揮します。</p>
+
+            <img src="https://www.radicalxchange.org/images/wiki/qv-diagram.png" alt="Quadratic Voting Diagram" class="qv-diagram" style="max-width: 100%; height: auto; width: 600px;">
+
+            <p>より詳細な情報については、<a href="https://en.wikipedia.org/wiki/Quadratic_voting" target="_blank">WikipediaのQuadratic Votingのページ</a>をご参照ください。</p>
+
             <h3>プログラム概要</h3>
             <p>このプログラムでは、U35若手リーダーが手がける公共性・社会性のあるプロジェクトに対し、QV方式に基づいて、より多くの共感や支持を集めたプロジェクトほど多くの資金を受け取れる仕組みを活用して支援を行いました。参加対象に選ばれた7つのプロジェクトには、総額25万円のマッチングプールから資金が分配されました。</p>
-            
+
             <h3>一般的な投票方式との違い</h3>
             <table class="comparison-table">
                 <thead>
@@ -76,19 +97,19 @@
                     </tr>
                 </tbody>
             </table>
-            
+
             <h3>実施結果</h3>
             <p>Beyond Conference 2025でのQV投票には、124人の投票者が参加し、7つの社会プロジェクトに対して合計783票が投じられました。この実証実験により、QV方式が従来の一人一票方式と比較して、より公平で多様な意見を反映した資金分配を実現できることが示されました。</p>
-            
+
             <p>世界ではすでに、アメリカ・コロラド州議会での法案の優先順位決定や、台湾・プレジデンタルハッカソンでのプロジェクト評価など、様々な場面でQV方式が活用されています。Beyond Conference 2025での実施は、日本における先進的な取り組みの一つとなりました。</p>
         </section>
-        
+
         <section id="overview">
             <h2>分析概要</h2>
             <p>このドキュメントでは、二次投票（Quadratic Voting, QV）方式と従来の一人一票（One-Person-One-Vote, OPOV）方式の比較分析結果をまとめています。様々な可視化手法を通じて、QV方式がどのように投票者の「選好の強さ」を反映し、より公平な予算配分を実現するかを示しています。</p>
-            
+
             <p>このシミュレーションでは、実際の投票データをもとに「もし一人一票方式だったら」という仮想シナリオを作成し、QV方式との違いを分析しています。シミュレーションでは、各投票者が最も高い点数を入れたプロジェクトに一票を投じたと仮定し、その結果と実際のQV方式での結果を比較しています。</p>
-            
+
             <h3>分析方針</h3>
             <p>このシミュレーションは以下の点を検証するために実施されました：</p>
             <ol>
@@ -97,23 +118,23 @@
                 <li>少数派の声が反映される度合い</li>
             </ol>
         </section>
-        
+
         <section id="buried-voices">
             <h2>1. 埋もれた声の可視化</h2>
             <div id="buried-voices-chart" class="chart-container"></div>
-            
+
             <h3>操作内容</h3>
             <ul>
                 <li>各投票者の「最大投票」を特定し、それ以外の強い選好（4以上のスコア）で投票したプロジェクトをカウント</li>
                 <li>これにより、一人一票方式ではカウントされない「埋もれた声」を可視化</li>
             </ul>
-            
+
             <h3>分析で分かること</h3>
             <ul>
                 <li>一人一票方式では反映されない「強い選好」の数を定量的に把握できる</li>
                 <li>どのプロジェクトが「埋もれた声」を多く持つかを視覚化</li>
             </ul>
-            
+
             <h3>分析結果</h3>
             <ul>
                 <li>Chiba Youth Center PRISMは21票もの「埋もれた声」を持ち、最も多い</li>
@@ -121,23 +142,23 @@
                 <li>これらの埋もれた声はQV方式では適切に反映されるが、一人一票方式では完全に無視される</li>
             </ul>
         </section>
-        
+
         <section id="preference-intensity">
             <h2>2. 投票強度の分布ヒートマップ</h2>
             <div id="preference-intensity-chart" class="chart-container"></div>
-            
+
             <h3>操作内容</h3>
             <ul>
                 <li>各プロジェクトと投票強度（0-9）のマトリックスを作成し、各セルに該当する投票者数を表示</li>
                 <li>カラーグラデーションで投票数の多さを視覚化</li>
             </ul>
-            
+
             <h3>分析で分かること</h3>
             <ul>
                 <li>各プロジェクトに対する投票強度の分布パターンを把握できる</li>
                 <li>一人一票方式では最高強度（9）の投票のみが反映されることを明示</li>
             </ul>
-            
+
             <h3>分析結果</h3>
             <ul>
                 <li>投票者は様々な強度でプロジェクトを評価しており、単純な「賛成/反対」の二択ではない</li>
@@ -146,23 +167,23 @@
                 <li>一人一票方式では、これらの豊かな情報が失われ、最高強度の投票のみが反映される</li>
             </ul>
         </section>
-        
+
         <section id="preference-comparison">
             <h2>3. 選好強度の比較</h2>
             <div id="preference-comparison-chart" class="chart-container"></div>
-            
+
             <h3>操作内容</h3>
             <ul>
                 <li>QV方式の投票を選好強度によって3段階（弱：1-3、中：4-6、強：7-9）に分類し積み上げグラフで表示</li>
                 <li>一人一票方式の投票数と並べて比較</li>
             </ul>
-            
+
             <h3>分析で分かること</h3>
             <ul>
                 <li>QV方式が捉える選好強度の分布と、一人一票方式で反映される投票の違いを直接比較できる</li>
                 <li>どのプロジェクトが「強い選好」を持つ支持者に支えられているかを把握できる</li>
             </ul>
-            
+
             <h3>分析結果</h3>
             <ul>
                 <li>一人一票方式では、Chiba Youth Center PRISMが最も多くの票を獲得</li>
@@ -170,23 +191,23 @@
                 <li>全体的に見て、QV方式はより多様な選好強度を反映し、少数派でも強い選好を持つプロジェクトを適切に評価している</li>
             </ul>
         </section>
-        
+
         <section id="budget-allocation">
             <h2>4. 予算配分の比較</h2>
             <div id="budget-allocation-chart" class="chart-container"></div>
-            
+
             <h3>操作内容</h3>
             <ul>
                 <li>得票数に応じた予算配分額をQV方式と一人一票方式で計算</li>
                 <li>各プロジェクトの予算配分額を棒グラフで比較</li>
             </ul>
-            
+
             <h3>分析で分かること</h3>
             <ul>
                 <li>投票方式の違いが実際の予算配分にどのような影響を与えるかを把握できる</li>
                 <li>どのプロジェクトがQV方式で有利/不利になるかを確認できる</li>
             </ul>
-            
+
             <h3>分析結果</h3>
             <ul>
                 <li>一人一票方式では上位プロジェクト（特にChiba Youth Center PRISM）に予算が集中する傾向がある</li>
@@ -194,23 +215,23 @@
                 <li>Para Travel Support TeamとInatori Art Center Planは一人一票方式よりもQV方式で多くの予算を獲得</li>
             </ul>
         </section>
-        
+
         <section id="gini-coefficient">
             <h2>5. ジニ係数による不平等度分析</h2>
             <div id="gini-coefficient-chart" class="chart-container"></div>
-            
+
             <h3>操作内容</h3>
             <ul>
                 <li>各投票方式による予算配分のジニ係数（不平等度の指標）を計算</li>
                 <li>両方式のジニ係数を比較</li>
             </ul>
-            
+
             <h3>分析で分かること</h3>
             <ul>
                 <li>予算配分の不平等さを客観的な数値で比較できる</li>
                 <li>値が低いほど平等な配分、高いほど不平等な配分を意味する</li>
             </ul>
-            
+
             <h3>分析結果</h3>
             <ul>
                 <li>QV方式のジニ係数: 0.0774</li>
@@ -218,23 +239,23 @@
                 <li>QV方式は一人一票方式よりも約62%低いジニ係数を示し、より平等な予算配分を実現している</li>
             </ul>
         </section>
-        
+
         <section id="lorenz-curve">
             <h2>6. ローレンツ曲線</h2>
             <div id="lorenz-curve-chart" class="chart-container"></div>
-            
+
             <h3>操作内容</h3>
             <ul>
                 <li>両投票方式の予算配分に基づいてローレンツ曲線を作成</li>
                 <li>完全平等線（45度線）からの乖離度を比較</li>
             </ul>
-            
+
             <h3>分析で分かること</h3>
             <ul>
                 <li>予算配分の不平等度を視覚的に把握できる</li>
                 <li>曲線が45度線から離れるほど不平等度が高いことを示す</li>
             </ul>
-            
+
             <h3>分析結果</h3>
             <ul>
                 <li>QV方式のローレンツ曲線は45度線に近く、より平等な予算配分を示している</li>
@@ -242,23 +263,23 @@
                 <li>この視覚化からも、QV方式がより公平な予算配分を実現することが確認できる</li>
             </ul>
         </section>
-        
+
         <section id="percentage-comparison">
             <h2>7. パーセンテージ比較</h2>
             <div id="percentage-comparison-chart" class="chart-container"></div>
-            
+
             <h3>操作内容</h3>
             <ul>
                 <li>総予算に対する各プロジェクトの配分比率（％）を計算</li>
                 <li>QV方式と一人一票方式の配分比率を比較</li>
             </ul>
-            
+
             <h3>分析で分かること</h3>
             <ul>
                 <li>両投票方式の予算配分パターンを相対的に比較できる</li>
                 <li>どのプロジェクトが相対的に多く/少なく予算を獲得するかを把握できる</li>
             </ul>
-            
+
             <h3>分析結果</h3>
             <ul>
                 <li>一人一票方式では、上位プロジェクト（Chiba Youth Center PRISM）が25%の予算を獲得</li>
@@ -266,23 +287,23 @@
                 <li>QV方式では相対的に低評価のプロジェクトも一定の予算シェアを確保できている</li>
             </ul>
         </section>
-        
+
         <section id="vote-comparison">
             <h2>8. 得票数比較</h2>
             <div id="vote-comparison-chart" class="chart-container"></div>
-            
+
             <h3>操作内容</h3>
             <ul>
                 <li>QV方式と一人一票方式での得票数を棒グラフで比較</li>
                 <li>得票パターンの違いを視覚化</li>
             </ul>
-            
+
             <h3>分析で分かること</h3>
             <ul>
                 <li>両投票方式がプロジェクトの人気度をどう評価するかの違いを把握できる</li>
                 <li>投票者の選好がどのように反映されているかを比較できる</li>
             </ul>
-            
+
             <h3>分析結果</h3>
             <ul>
                 <li>QV方式では全てのプロジェクトが一定の得票数を確保しており、相対的な差が小さい</li>
@@ -290,7 +311,7 @@
                 <li>これは一人一票方式が「多数決」の性質を持つのに対し、QV方式は「選好強度」も考慮することの違いを示している</li>
             </ul>
         </section>
-        
+
         <section id="conclusion">
             <h2>結論</h2>
             <p>この比較分析から、QV方式は従来の一人一票方式と比較して以下の利点を持つことが明らかになりました：</p>
@@ -303,11 +324,11 @@
             <p>QV方式は、直接民主制における投票の質を高め、より公平で豊かな集合的意思決定を可能にする革新的手法であると言えます。</p>
         </section>
     </main>
-    
+
     <footer>
         <p>&copy; 2025 <a href="https://github.com/tkgshn">tkgshn</a> - <a href="https://github.com/tkgshn/qv-analysis-beyondconference2025">GitHub Repository</a></p>
     </footer>
-    
+
     <script src="assets/js/charts.js"></script>
 </body>
 </html>
